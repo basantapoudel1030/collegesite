@@ -1,0 +1,328 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+header{
+    color: green;
+    display: flex;
+    height: 250px;
+    align-items: center;
+    background-image: url("/public/assets/bgimg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+#sub-head{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    margin-top: 10px;
+    /* background-color: blue;   */
+}
+#head-left-section{
+    font-weight: bold;
+    width: 30%;
+    /* color: green; */
+    display: flex;
+    /* height: 200px; */
+}
+
+
+#title{
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+#location{
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    top: 25px;
+    font-weight: bold;
+}
+#container{
+    /* height: 100vh; */
+    /* background: linear-gradient(60deg, green, brown) */
+}
+#logo{
+    height:100px;
+    width: 100px;
+    /* border-radius: 50%; */
+}
+#userLogin, #menuList{
+    /* color: green; */
+    font-size: 25px;
+}
+nav{
+ /* background-color: black; */
+ display: flex;
+ width: 70%;
+ height: 50px;
+ /* align-items: center; */
+ gap: 60px;
+ padding-right: 20px;
+ border-bottom: 2px solid rgb(25,135,84);
+}
+#side-menu{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    gap: 30px;
+}
+ nav ul{
+    /* background-color: green;  */
+    width: 100%;   
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content:end;
+    list-style: none;
+    gap: 50px;
+
+    
+}
+nav a{
+    font-size: 20px;
+    font-weight: bold;
+    /* color: green; */
+    text-decoration: none;
+}
+#mar-ann{
+    /* position:absolute; */
+    /* left: 0px; */
+}
+#announce{
+    font-weight: bold;
+    background-color: rgb(25,135,84);
+}
+marquee{
+    width: 100%;
+    /* position: relative; */
+    /* left: 135px; */
+    right: 0;
+    /* margin-bottom: 10px; */
+}
+main{
+    display: flex;
+    margin-top: 20px;
+    background-color: aliceblue;
+
+}
+#img-section{
+    width: 30%;
+    position: sticky;
+    top: 500px;
+}
+#content-section{
+    width: 70%;
+    padding-top: 20px;
+    border-top: 2px solid rgb(25,135,84);
+}
+#test-img{
+    /* border-radius: 50%; */
+}
+#Overview{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+#text-head{
+    font-size: 20px;
+    font-weight: bold;
+    border-left: 5px solid rgb(25,135,84);
+    padding-left: 10px;
+}
+#text-body{
+    display: flex;
+    gap: 20px;
+}
+#text-content{
+    width: 750px;
+    text-align: justify;
+
+}
+#text-content p{
+    height: 140px;
+    /* background-color: blue; */
+}
+#img-container img{
+    width: 400px;
+    margin: 20px;
+   
+}
+#img-container{
+    
+}
+#sub-head-container{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    transition: 0.5s;
+}
+.greenEffect{
+    color: white;
+    transition: 0.5s;
+}
+
+.whiteEffect{
+    color: green;
+    transition: 0.5s;
+}
+
+.sub-head-effect{
+    padding: 10px;
+    background-color: rgb(25,135,84);
+
+}
+.show{
+    display: inline-block;
+
+}
+.hidden{
+    display: none;
+}
+
+#chatbot{
+    /* background-color: rgb(25,135,84); */
+    color: rgb(25,135,84);
+    font-size: 35px;
+    width: 200px;
+    height: 200px;
+    /* border-radius: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+#chatbot span:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    /* transform: translateX(-5px); */
+    text-shadow: 5px 5px 10px rgba(69, 68, 68, 0.76);
+}
+
+
+/* chat section css  */
+
+#chat-section{
+    width: 400px;
+    /* height: 600px; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px ;
+    border-bottom:1px solid rgb(25,135,84) ;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 10px;
+    transition: 2s;
+    z-index: 1;
+}
+#chat-section-head{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(25,135,84);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    height: 50px;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#clz-info{
+    display: flex;    
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+}
+.bot-side{
+    background-color: gainsboro;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: large;
+    display: inline-block;
+    margin-top: 20%;
+    margin-left: 2%;
+}
+#chat-input-section{
+    margin-top: 20%;
+}
+#chat-input-section input{
+    border-radius: 30px;
+    border: none;
+    background-color: rgba(116, 117, 118,0.14);
+    height: 40px;
+    width: 80%;
+    margin: 10px;
+    padding: 5px;
+}
+#chat-input-section span{
+    font-size: 25px;
+    color: rgb(25,135,84);
+}
+
+#chat-input-section input:focus{
+    outline: none;
+}
+#chat-input-section span:hover{
+    cursor: pointer;
+}
+.show{
+    display: block;
+}
+.hidden{
+    display: none;
+}
+.client-side{
+    background-color: rgb(25,135,84);
+    /* display: inline-block; */
+    /* background-color: gainsboro; */
+    border-radius: 20px;
+    padding: 10px;
+    font-size: large;
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 2%;
+    color: white;
+}
+
+
+/* testimonial css */
+
+#testimonial-container{
+
+    background-color: aliceblue;
+    margin-top: 20px;
+    padding: 20px;
+}
+.testimonial{
+    background-color: rgb(25,135,84);
+    width: 75%;
+    border-radius: 30px;
+}
+.testimonial-content img{
+    border-radius: 50%;
+}
+.testimonial-content{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+.testimonial-content p{
+    color: white;
+    text-align: justify;
+    padding: 10px;
+}
